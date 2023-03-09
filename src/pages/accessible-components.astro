@@ -1,6 +1,6 @@
 ---
-import DefaultLayout from '../layouts/DefaultLayout.astro'
-import { Icon } from 'astro-icon'
+import DefaultLayout from "../layouts/DefaultLayout.astro";
+import { Icon } from "astro-icon";
 import {
   Accordion,
   AccordionItem,
@@ -11,7 +11,7 @@ import {
   Modal,
   Notification,
   Pagination,
-} from 'accessible-astro-components'
+} from "accessible-astro-components";
 ---
 
 <DefaultLayout title="Accessible Components">
@@ -20,7 +20,8 @@ import {
       <h1>Accessible Components</h1>
       <p class="text-2xl">
         This theme has a lot of extra a11y components provided by the <a
-          href="https://github.com/markteekman/accessible-astro-components#Pagination">Accessible Astro Component</a
+          href="https://github.com/markteekman/accessible-astro-components#Pagination"
+          >Accessible Astro Component</a
         > NPM package to help you build accessible pages faster:
       </p>
     </div>
@@ -33,38 +34,43 @@ import {
           <Accordion>
             <AccordionItem header="First Item">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi nobis optio? Qui in quo
-                accusantium debitis sapiente obcaecati magnam incidunt sit. Molestiae exercitationem quibusdam quod
-                veritatis laboriosam est tenetur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto quasi nobis optio? Qui in quo accusantium debitis
+                sapiente obcaecati magnam incidunt sit. Molestiae exercitationem
+                quibusdam quod veritatis laboriosam est tenetur.
               </p>
               <a href="#">Tab to me!</a>
             </AccordionItem>
             <AccordionItem header="Second Item">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi nobis optio? Qui in quo
-                accusantium debitis sapiente obcaecati magnam incidunt sit. Molestiae exercitationem quibusdam quod
-                veritatis laboriosam est tenetur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto quasi nobis optio? Qui in quo accusantium debitis
+                sapiente obcaecati magnam incidunt sit. Molestiae exercitationem
+                quibusdam quod veritatis laboriosam est tenetur.
               </p>
             </AccordionItem>
             <AccordionItem header="Third Item">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi nobis optio? Qui in quo
-                accusantium debitis sapiente obcaecati magnam incidunt sit. Molestiae exercitationem quibusdam quod
-                veritatis laboriosam est tenetur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto quasi nobis optio? Qui in quo accusantium debitis
+                sapiente obcaecati magnam incidunt sit. Molestiae exercitationem
+                quibusdam quod veritatis laboriosam est tenetur.
               </p>
             </AccordionItem>
             <AccordionItem header="Fourth Item">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi nobis optio? Qui in quo
-                accusantium debitis sapiente obcaecati magnam incidunt sit. Molestiae exercitationem quibusdam quod
-                veritatis laboriosam est tenetur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto quasi nobis optio? Qui in quo accusantium debitis
+                sapiente obcaecati magnam incidunt sit. Molestiae exercitationem
+                quibusdam quod veritatis laboriosam est tenetur.
               </p>
             </AccordionItem>
             <AccordionItem header="Fifth Item">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi nobis optio? Qui in quo
-                accusantium debitis sapiente obcaecati magnam incidunt sit. Molestiae exercitationem quibusdam quod
-                veritatis laboriosam est tenetur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto quasi nobis optio? Qui in quo accusantium debitis
+                sapiente obcaecati magnam incidunt sit. Molestiae exercitationem
+                quibusdam quod veritatis laboriosam est tenetur.
               </p>
             </AccordionItem>
           </Accordion>
@@ -73,8 +79,8 @@ import {
           <h2>Breadcrumbs</h2>
           <Breadcrumbs>
             <BreadcrumbsItem href="/" label="Home" />
-            <BreadcrumbsItem href="/blog" label="Blog" />
-            <BreadcrumbsItem currentPage={true} label="My blog post" />
+            <BreadcrumbsItem href="/topics" label="topics" />
+            <BreadcrumbsItem currentPage={true} label="My topics post" />
           </Breadcrumbs>
         </div>
         <div class="space-content">
@@ -85,7 +91,10 @@ import {
         </div>
         <div class="space-content">
           <h2>DarkMode Toggle</h2>
-          <p>This component can be viewed in the top right corner besides the main navigation.</p>
+          <p>
+            This component can be viewed in the top right corner besides the
+            main navigation.
+          </p>
         </div>
         <div class="space-content">
           <h2>Media</h2>
@@ -97,22 +106,28 @@ import {
         <div class="space-content">
           <h2>Modals</h2>
           <button id="modal1-trigger" class="button">Modal 1</button>&nbsp;
-          <button id="modal2-trigger" class="button color-secondary">Modal 2</button>
+          <button id="modal2-trigger" class="button color-secondary"
+            >Modal 2</button
+          >
           <Modal triggerId="modal1-trigger" title="Modal 1">
             <p>Why hello, I be the <strong>first</strong> Modal.</p>
           </Modal>
           <Modal triggerId="modal2-trigger" title="Modal 2" closeText="Cancel">
             <p>
-              Ah yes, and I be the <strong>second</strong> Modal. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Sed, a! Ratione eaque temporibus alias tempora pariatur dolorem.
+              Ah yes, and I be the <strong>second</strong> Modal. Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit. Sed, a! Ratione eaque temporibus
+              alias tempora pariatur dolorem.
             </p>
-            <button class="button" onclick="closeModal()">Confirm action</button>
+            <button class="button" onclick="closeModal()">Confirm action</button
+            >
           </Modal>
         </div>
         <div class="space-content">
           <h2>Notification</h2>
           <Notification>
-            <Icon pack="ion" name="notifications-outline" /><p><strong>Message:</strong> This is a notification!</p>
+            <Icon pack="ion" name="notifications-outline" /><p>
+              <strong>Message:</strong> This is a notification!
+            </p>
           </Notification>
           <Notification type="info">
             <Icon pack="ion" name="information-circle-outline" /><p>
@@ -126,8 +141,8 @@ import {
           </Notification>
           <Notification type="warning">
             <Icon pack="ion" name="warning-outline" /><p>
-              <strong>Warning:</strong> This is a notification of type warning and goes on multiple lines to see how that
-              looks.
+              <strong>Warning:</strong> This is a notification of type warning and
+              goes on multiple lines to see how that looks.
             </p>
           </Notification>
           <Notification type="error">
@@ -142,7 +157,9 @@ import {
         </div>
         <div class="space-content">
           <h2>SkipLinks</h2>
-          <p>This component can be viewed by shift+tabbing untill they show up.</p>
+          <p>
+            This component can be viewed by shift+tabbing untill they show up.
+          </p>
         </div>
       </div>
     </div>

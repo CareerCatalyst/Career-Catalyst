@@ -1,0 +1,47 @@
+---
+import { Breadcrumbs, BreadcrumbsItem } from "accessible-astro-components";
+import DefaultLayout from "../layouts/DefaultLayout.astro";
+
+const { title, description, url } = Astro.props;
+---
+
+<DefaultLayout title={title} description={description} url={url}>
+  <section class="my-12">
+    <div class="container">
+      <h1 class="header-bg">{title}</h1><br />
+    </div>
+  </section>
+  <section class="my-12">
+    <div class="container">
+      <slot />
+    </div>
+  </section>
+</DefaultLayout>
+
+<style lang="scss">
+  ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+
+    @media (min-width: 550px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+    }
+
+    @media (min-width: 950px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .header-bg {
+    color: var(--neutral-900);
+    background-image: linear-gradient(
+      40deg,
+      var(--primary-100),
+      var(--secondary-200)
+    );
+    padding: 3rem;
+    border-radius: 0.75rem;
+  }
+</style>

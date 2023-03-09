@@ -1,21 +1,26 @@
 ---
-import { Icon } from 'astro-icon'
+import { Icon } from "astro-icon";
 
-const { icon = 'mdi:rocket', title = 'Title' } = Astro.props
+const { icon = "mdi:rocket", title = "Title", url } = Astro.props;
 ---
 
 <div class="feature flex flex-col gap-4">
-  <Icon name={icon} />
-  <div class="content">
-    <h3>{title}</h3>
-    <p>
-      <slot>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, corporis.</slot>
-    </p>
-  </div>
+  <a href={url}>
+    <Icon name={icon} />
+    <div class="content">
+      <h3>{title}</h3>
+      <p>
+        <slot
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+          corporis.</slot
+        >
+      </p>
+    </div>
+  </a>
 </div>
 
 <style lang="scss">
-  @use '../assets/scss/base/breakpoint' as *;
+  @use "../assets/scss/base/breakpoint" as *;
 
   .feature {
     position: relative;
@@ -31,7 +36,7 @@ const { icon = 'mdi:rocket', title = 'Title' } = Astro.props
     }
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       z-index: -1;
       background-color: var(--action-color);

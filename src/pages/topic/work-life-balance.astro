@@ -1,0 +1,14 @@
+---
+import GuideContainer from "../../components/GuideContainer.astro";
+import { PAGES } from "../../utils/constants";
+
+const {
+  title = PAGES.WORK_LIFE_BALANCE.title,
+  description = PAGES.WORK_LIFE_BALANCE.description,
+  url = PAGES.WORK_LIFE_BALANCE.url,
+} = Astro.props;
+---
+
+<GuideContainer title={title} description={description} url={url}>
+  <p>HERE IS THE BODY OF THE {title} page</p>
+</GuideContainer>
