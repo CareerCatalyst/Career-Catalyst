@@ -4,6 +4,7 @@ import Hero from "../components/Hero.astro";
 import Feature from "../components/Feature.astro";
 import Counter from "../components/Counter.astro";
 import ContentMedia from "../components/ContentMedia.astro";
+import { PATHS } from "../utils/constants.js";
 ---
 
 <DefaultLayout title="Home">
@@ -15,7 +16,7 @@ import ContentMedia from "../components/ContentMedia.astro";
         <Feature
           icon="tabler:old"
           title="Retirement Plans"
-          url="/blog/retirement-plans"
+          url={`/blog/${PATHS.RETIREMENT_PLANS}`}
         >
           Let's talk different types of retirement plans, their benefits, and
           alternatives so you can feel confident in planning for your future.
@@ -23,7 +24,7 @@ import ContentMedia from "../components/ContentMedia.astro";
         <Feature
           icon="ic:outline-balance"
           title="Work-Life Balance"
-          url="/blog/work-life-balance"
+          url={`/blog/${PATHS.WORK_LIFE_BALANCE}`}
         >
           Struggling to balance your job and personal life? Let's talk tips and
           mindset shifts so you can live your best life, both in and out of
@@ -32,7 +33,7 @@ import ContentMedia from "../components/ContentMedia.astro";
         <Feature
           icon="icon-park-outline:id-card-v"
           title="Resumes"
-          url="/blog/resumes"
+          url={`/blog/${PATHS.RESUMES}`}
         >
           Your resume is your first impression to potential employers. Let's
           make yours stand out with tips and tricks from leading experts.
@@ -40,7 +41,7 @@ import ContentMedia from "../components/ContentMedia.astro";
         <Feature
           icon="ph:mask-sad-bold"
           title="Imposter Syndrome"
-          url="/blog/imposter-syndrome"
+          url={`/blog/${PATHS.IMPOSTER_SYNDROME}`}
         >
           Let's put imposter syndrome in its place! This guide shares practical
           tips and insights to help you overcome self-doubt and succeed in your
@@ -49,7 +50,7 @@ import ContentMedia from "../components/ContentMedia.astro";
         <Feature
           icon="ri:health-book-line"
           title="Heathcare Plans"
-          url="/blog/healthcare-plans"
+          url={`/blog/${PATHS.HEALTHCARE_PLANS}`}
         >
           Choosing the right healthcare plan can be complicated. Let's takes the
           guesswork out of selecting the right plan by explaining the different
@@ -58,7 +59,7 @@ import ContentMedia from "../components/ContentMedia.astro";
         <Feature
           icon="mdi:people-group-outline"
           title="Building Your Network"
-          url="/blog/building-your-network"
+          url={`/blog/${PATHS.BUILDING_YOUR_NETWORK}`}
         >
           Networking is crucial for career growth, but it can be daunting. Let's
           go over tips to help you build and expand your professional network
@@ -67,7 +68,7 @@ import ContentMedia from "../components/ContentMedia.astro";
         <Feature
           icon="ic:baseline-work-outline"
           title="Career Development"
-          url="/blog/career-development"
+          url={`/blog/${PATHS.CAREER_DEVELOPMENT}`}
         >
           Are you looking to advance your career but don't know where to start?
           This guide provides actionable steps and resources to help your career
@@ -76,7 +77,7 @@ import ContentMedia from "../components/ContentMedia.astro";
         <Feature
           icon="ph:money-bold"
           title="Negotiating Pay"
-          url="/blog/negotiating-pay"
+          url={`/blog/${PATHS.NEGOTIATING_PAY}`}
         >
           Don't leave money on the table! This guide provides tips and
           strategies to help you negotiate your salary and benefits, so you can
@@ -85,7 +86,7 @@ import ContentMedia from "../components/ContentMedia.astro";
         <Feature
           icon="icon-park-outline:people-speak"
           title="Advocating For Yourself"
-          url="/blog/advocating-for-yourself"
+          url={`/blog/${PATHS.ADVOCATING_FOR_YOURSELF}`}
         >
           Advocating for yourself is essential for career success, but it can be
           hard. Let's talk about building assertiveness, effectively communicate
@@ -94,7 +95,7 @@ import ContentMedia from "../components/ContentMedia.astro";
         <Feature
           icon="vaadin:workplace"
           title="Workplace Culture"
-          url="/blog/workplace-culture"
+          url={`/blog/${PATHS.WORKPLACE_CULTURE}`}
         >
           Workplace culture can greatly impact job satisfaction and
           productivity. Let's explore elements of a positive workplace culture
@@ -103,7 +104,7 @@ import ContentMedia from "../components/ContentMedia.astro";
         <Feature
           icon="ic:sharp-access-time"
           title="Inter-Timezone Work"
-          url="/blog/inter-timezone-work"
+          url={`/blog/${PATHS.INTER_TIMEZONE_WORK}`}
         >
           Let's talk best practices of working across timezones so you can
           maximize productivity, communicate effectively, and maintain a healthy
@@ -112,7 +113,7 @@ import ContentMedia from "../components/ContentMedia.astro";
         <Feature
           icon="uil:award"
           title="Importance of Personal Brand"
-          url="/blog/personal-brand"
+          url={`/blog/${PATHS.PERSONAL_BRAND}`}
         >
           Are you wanting to leverage your brand to advance your career but
           don't know how? This guide explores importance of personal branding
