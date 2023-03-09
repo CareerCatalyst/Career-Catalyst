@@ -1,11 +1,11 @@
 ---
 import GuideContainer from "../../components/GuideContainer.astro";
+import { PAGES } from "../../utils/constants";
 
 const {
-  title = "Work-Life Balance",
-  description = "Struggling to balance your job and personal life? Let's talk tips" +
-    "and mindset shifts so you can live your best life, both in and out of work.",
-  url = "work-life-balance",
+  title = PAGES.WORK_LIFE_BALANCE.title,
+  description = PAGES.WORK_LIFE_BALANCE.description,
+  url = PAGES.WORK_LIFE_BALANCE.url,
 } = Astro.props;
 ---
 

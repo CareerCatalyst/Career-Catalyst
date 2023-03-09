@@ -1,11 +1,11 @@
 ---
 import GuideContainer from "../../components/GuideContainer.astro";
+import { PAGES } from "../../utils/constants";
 
 const {
-  title = "Resumes",
-  description = "Your resume is your first impression to potential employers. " +
-    "Let's make yours stand out with tips and tricks from leading experts.",
-  url = "resumes",
+  title = PAGES.RESUMES.title,
+  description = PAGES.RESUMES.description,
+  url = PAGES.RESUMES.url,
 } = Astro.props;
 ---
 

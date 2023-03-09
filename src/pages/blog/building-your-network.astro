@@ -1,12 +1,11 @@
 ---
 import GuideContainer from "../../components/GuideContainer.astro";
+import { PAGES } from "../../utils/constants";
 
 const {
-  title = "Building Your Network",
-  description = "Networking is crucial for career growth, but it can be" +
-    " daunting. Let's go over tips to help you build and expand your " +
-    "professional network and advance your career.",
-  url = "building-your-network",
+  title = PAGES.BUILDING_YOUR_NETWORK.title,
+  description = PAGES.BUILDING_YOUR_NETWORK.description,
+  url = PAGES.BUILDING_YOUR_NETWORK.url,
 } = Astro.props;
 ---
 

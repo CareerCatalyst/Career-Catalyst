@@ -1,11 +1,11 @@
 ---
 import GuideContainer from "../../components/GuideContainer.astro";
+import { PAGES } from "../../utils/constants";
 
 const {
-  title = "Workplace Culture",
-  description = "Workplace culture can greatly impact job satisfaction and productivity." +
-    "Let's explore elements of a positive workplace culture and navigating red flags.",
-  url = "workplace-culture",
+  title = PAGES.WORKPLACE_CULTURE.title,
+  description = PAGES.WORKPLACE_CULTURE.description,
+  url = PAGES.WORKPLACE_CULTURE.url,
 } = Astro.props;
 ---
 

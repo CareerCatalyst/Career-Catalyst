@@ -1,12 +1,11 @@
 ---
 import GuideContainer from "../../components/GuideContainer.astro";
+import { PAGES } from "../../utils/constants";
 
 const {
-  title = "Career Development",
-  description = "Are you looking to advance your career but don't know where" +
-    " to start? This guide provides actionable steps and resources to help your" +
-    " career reach it's full potential.",
-  url = "career-development",
+  title = PAGES.CAREER_DEVELOPMENT.title,
+  description = PAGES.CAREER_DEVELOPMENT.description,
+  url = PAGES.CAREER_DEVELOPMENT.url,
 } = Astro.props;
 ---
 

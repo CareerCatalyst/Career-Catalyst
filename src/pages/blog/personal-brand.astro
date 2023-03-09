@@ -1,12 +1,11 @@
 ---
 import GuideContainer from "../../components/GuideContainer.astro";
+import { PAGES } from "../../utils/constants";
 
 const {
-  title = "Personal Brand",
-  description = "Are you wanting to leverage your brand to advance your career but" +
-    "don't know how? This guide explores importance of personal branding" +
-    "and tips to help you define and develop your own brand.",
-  url = "personal-brand",
+  title = PAGES.PERSONAL_BRAND.title,
+  description = PAGES.PERSONAL_BRAND.description,
+  url = PAGES.PERSONAL_BRAND.url,
 } = Astro.props;
 ---
 

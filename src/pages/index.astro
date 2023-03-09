@@ -4,7 +4,7 @@ import Hero from "../components/Hero.astro";
 import Feature from "../components/Feature.astro";
 import Counter from "../components/Counter.astro";
 import ContentMedia from "../components/ContentMedia.astro";
-import { PATHS } from "../utils/constants.js";
+import { PAGES } from "../utils/constants.js";
 ---
 
 <DefaultLayout title="Home">
@@ -15,109 +15,87 @@ import { PATHS } from "../utils/constants.js";
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
         <Feature
           icon="tabler:old"
-          title="Retirement Plans"
-          url={`/blog/${PATHS.RETIREMENT_PLANS}`}
+          title={PAGES.RETIREMENT_PLANS.title}
+          url={`/blog/${PAGES.RETIREMENT_PLANS.url}`}
         >
-          Let's talk different types of retirement plans, their benefits, and
-          alternatives so you can feel confident in planning for your future.
+          {PAGES.RETIREMENT_PLANS.description}
         </Feature>
         <Feature
           icon="ic:outline-balance"
-          title="Work-Life Balance"
-          url={`/blog/${PATHS.WORK_LIFE_BALANCE}`}
+          title={PAGES.WORK_LIFE_BALANCE.title}
+          url={`/blog/${PAGES.WORK_LIFE_BALANCE.url}`}
         >
-          Struggling to balance your job and personal life? Let's talk tips and
-          mindset shifts so you can live your best life, both in and out of
-          work.
+          {PAGES.WORK_LIFE_BALANCE.description}
         </Feature>
         <Feature
           icon="icon-park-outline:id-card-v"
-          title="Resumes"
-          url={`/blog/${PATHS.RESUMES}`}
+          title={PAGES.RESUMES.title}
+          url={`/blog/${PAGES.RESUMES.url}`}
         >
-          Your resume is your first impression to potential employers. Let's
-          make yours stand out with tips and tricks from leading experts.
+          {PAGES.RESUMES.description}
         </Feature>
         <Feature
           icon="ph:mask-sad-bold"
-          title="Imposter Syndrome"
-          url={`/blog/${PATHS.IMPOSTER_SYNDROME}`}
+          title={PAGES.IMPOSTER_SYNDROME.title}
+          url={`/blog/${PAGES.IMPOSTER_SYNDROME.url}`}
         >
-          Let's put imposter syndrome in its place! This guide shares practical
-          tips and insights to help you overcome self-doubt and succeed in your
-          career.
+          {PAGES.IMPOSTER_SYNDROME.description}
         </Feature>
         <Feature
           icon="ri:health-book-line"
-          title="Heathcare Plans"
-          url={`/blog/${PATHS.HEALTHCARE_PLANS}`}
+          title={PAGES.HEALTHCARE_PLANS.title}
+          url={`/blog/${PAGES.HEALTHCARE_PLANS.url}`}
         >
-          Choosing the right healthcare plan can be complicated. Let's takes the
-          guesswork out of selecting the right plan by explaining the different
-          types of plans, their benefits, and alternatives.
+          {PAGES.HEALTHCARE_PLANS.description}
         </Feature>
         <Feature
           icon="mdi:people-group-outline"
-          title="Building Your Network"
-          url={`/blog/${PATHS.BUILDING_YOUR_NETWORK}`}
+          title={PAGES.BUILDING_YOUR_NETWORK.title}
+          url={`/blog/${PAGES.BUILDING_YOUR_NETWORK.url}`}
         >
-          Networking is crucial for career growth, but it can be daunting. Let's
-          go over tips to help you build and expand your professional network
-          and advance your career.
+          {PAGES.BUILDING_YOUR_NETWORK.description}
         </Feature>
         <Feature
           icon="ic:baseline-work-outline"
-          title="Career Development"
-          url={`/blog/${PATHS.CAREER_DEVELOPMENT}`}
+          title={PAGES.CAREER_DEVELOPMENT.title}
+          url={`/blog/${PAGES.CAREER_DEVELOPMENT.url}`}
         >
-          Are you looking to advance your career but don't know where to start?
-          This guide provides actionable steps and resources to help your career
-          reach it's full potential.
+          {PAGES.CAREER_DEVELOPMENT.description}
         </Feature>
         <Feature
           icon="ph:money-bold"
-          title="Negotiating Pay"
-          url={`/blog/${PATHS.NEGOTIATING_PAY}`}
+          title={PAGES.NEGOTIATING_PAY.title}
+          url={`/blog/${PAGES.NEGOTIATING_PAY.url}`}
         >
-          Don't leave money on the table! This guide provides tips and
-          strategies to help you negotiate your salary and benefits, so you can
-          earn what you're worth and feel valued in your job.
+          {PAGES.NEGOTIATING_PAY.description}
         </Feature>
         <Feature
           icon="icon-park-outline:people-speak"
-          title="Advocating For Yourself"
-          url={`/blog/${PATHS.ADVOCATING_FOR_YOURSELF}`}
+          title={PAGES.ADVOCATING_FOR_YOURSELF.title}
+          url={`/blog/${PAGES.ADVOCATING_FOR_YOURSELF.url}`}
         >
-          Advocating for yourself is essential for career success, but it can be
-          hard. Let's talk about building assertiveness, effectively communicate
-          your needs, boundaries, and goals in the workplace.
+          {PAGES.ADVOCATING_FOR_YOURSELF.description}
         </Feature>
         <Feature
           icon="vaadin:workplace"
-          title="Workplace Culture"
-          url={`/blog/${PATHS.WORKPLACE_CULTURE}`}
+          title={PAGES.WORKPLACE_CULTURE.title}
+          url={`/blog/${PAGES.WORKPLACE_CULTURE.url}`}
         >
-          Workplace culture can greatly impact job satisfaction and
-          productivity. Let's explore elements of a positive workplace culture
-          and navigating red flags.
+          {PAGES.WORKPLACE_CULTURE.description}
         </Feature>
         <Feature
           icon="ic:sharp-access-time"
-          title="Inter-Timezone Work"
-          url={`/blog/${PATHS.INTER_TIMEZONE_WORK}`}
+          title={PAGES.INTER_TIMEZONE_WORK.title}
+          url={`/blog/${PAGES.INTER_TIMEZONE_WORK.url}`}
         >
-          Let's talk best practices of working across timezones so you can
-          maximize productivity, communicate effectively, and maintain a healthy
-          work-life balance.
+          {PAGES.INTER_TIMEZONE_WORK.description}
         </Feature>
         <Feature
           icon="uil:award"
-          title="Importance of Personal Brand"
-          url={`/blog/${PATHS.PERSONAL_BRAND}`}
+          title={PAGES.PERSONAL_BRAND.title}
+          url={`/blog/${PAGES.PERSONAL_BRAND.url}`}
         >
-          Are you wanting to leverage your brand to advance your career but
-          don't know how? This guide explores importance of personal branding
-          and tips to help you define and develop your own brand.
+          {PAGES.PERSONAL_BRAND.description}
         </Feature>
       </div>
     </div>

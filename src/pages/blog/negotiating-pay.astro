@@ -1,12 +1,11 @@
 ---
 import GuideContainer from "../../components/GuideContainer.astro";
+import { PAGES } from "../../utils/constants";
 
 const {
-  title = "Adcovating for Yourself",
-  description = "Advocating for yourself is essential for career success, but " +
-    "it can be hard. Let's talk about building assertiveness, effectively" +
-    " communicate your needs, boundaries, and goals in the workplace.",
-  url = "advocating-for-yourself",
+  title = PAGES.NEGOTIATING_PAY.title,
+  description = PAGES.NEGOTIATING_PAY.description,
+  url = PAGES.NEGOTIATING_PAY.url,
 } = Astro.props;
 ---
 

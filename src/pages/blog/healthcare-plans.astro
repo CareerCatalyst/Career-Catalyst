@@ -1,12 +1,11 @@
 ---
 import GuideContainer from "../../components/GuideContainer.astro";
+import { PAGES } from "../../utils/constants";
 
 const {
-  title = "Healthcare Plans",
-  description = "Choosing the right healthcare plan can be complicated. " +
-    "Let's takes the guesswork out of selecting the right plan by explaining" +
-    "the different types of plans, their benefits, and alternatives.",
-  url = "healthcare-plans",
+  title = PAGES.HEALTHCARE_PLANS.title,
+  description = PAGES.HEALTHCARE_PLANS.description,
+  url = PAGES.HEALTHCARE_PLANS.url,
 } = Astro.props;
 ---
 

@@ -1,11 +1,11 @@
 ---
 import GuideContainer from "../../components/GuideContainer.astro";
+import { PAGES } from "../../utils/constants";
 
 const {
-  title = "Retirement Plans",
-  description = "Let's talk different types of retirement plans, their benefits," +
-    " and alternatives so you can feel confident in planning for your future.",
-  url = "retirement-plans",
+  title = PAGES.RETIREMENT_PLANS.title,
+  description = PAGES.RETIREMENT_PLANS.description,
+  url = PAGES.RETIREMENT_PLANS.url,
 } = Astro.props;
 ---
 
