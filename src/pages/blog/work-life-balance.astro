@@ -1,0 +1,14 @@
+---
+import GuideContainer from "../../components/GuideContainer.astro";
+
+const {
+  title = "Work-Life Balance",
+  description = "Struggling to balance your job and personal life? Let's talk tips" +
+    "and mindset shifts so you can live your best life, both in and out of work.",
+  url = "work-life-balance",
+} = Astro.props;
+---
+
+<GuideContainer title={title} description={description} url={url}>
+  <p>HERE IS THE BODY OF THE {title} page</p>
+</GuideContainer>

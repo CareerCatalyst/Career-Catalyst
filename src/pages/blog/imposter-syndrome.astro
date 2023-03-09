@@ -1,0 +1,15 @@
+---
+import GuideContainer from "../../components/GuideContainer.astro";
+
+const {
+  title = "Imposter Syndrome",
+  description = " Let's put imposter syndrome in its place! This guide" +
+    " shares practical tips and insights to help you overcome self-doubt" +
+    " and succeed in your career.",
+  url = "imposter-syndrome",
+} = Astro.props;
+---
+
+<GuideContainer title={title} description={description} url={url}>
+  <p>HERE IS THE BODY OF THE {title} page</p>
+</GuideContainer>

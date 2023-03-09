@@ -1,0 +1,15 @@
+---
+import GuideContainer from "../../components/GuideContainer.astro";
+
+const {
+  title = "Inter-Timezone Work",
+  description = "Let's talk best practices of working across timezones so you can" +
+    "maximize productivity, communicate effectively, and maintain a healthy" +
+    "work-life balance.",
+  url = "inter-timezone-work",
+} = Astro.props;
+---
+
+<GuideContainer title={title} description={description} url={url}>
+  <p>HERE IS THE BODY OF THE {title} page</p>
+</GuideContainer>

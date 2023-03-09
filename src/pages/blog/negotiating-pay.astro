@@ -1,0 +1,15 @@
+---
+import GuideContainer from "../../components/GuideContainer.astro";
+
+const {
+  title = "Adcovating for Yourself",
+  description = "Advocating for yourself is essential for career success, but " +
+    "it can be hard. Let's talk about building assertiveness, effectively" +
+    " communicate your needs, boundaries, and goals in the workplace.",
+  url = "advocating-for-yourself",
+} = Astro.props;
+---
+
+<GuideContainer title={title} description={description} url={url}>
+  <p>HERE IS THE BODY OF THE {title} page</p>
+</GuideContainer>

@@ -1,0 +1,15 @@
+---
+import GuideContainer from "../../components/GuideContainer.astro";
+
+const {
+  title = "Building Your Network",
+  description = "Networking is crucial for career growth, but it can be" +
+    " daunting. Let's go over tips to help you build and expand your " +
+    "professional network and advance your career.",
+  url = "building-your-network",
+} = Astro.props;
+---
+
+<GuideContainer title={title} description={description} url={url}>
+  <p>HERE IS THE BODY OF THE {title} page</p>
+</GuideContainer>

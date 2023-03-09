@@ -1,0 +1,15 @@
+---
+import GuideContainer from "../../components/GuideContainer.astro";
+
+const {
+  title = "Career Development",
+  description = "Are you looking to advance your career but don't know where" +
+    " to start? This guide provides actionable steps and resources to help your" +
+    " career reach it's full potential.",
+  url = "career-development",
+} = Astro.props;
+---
+
+<GuideContainer title={title} description={description} url={url}>
+  <p>HERE IS THE BODY OF THE {title} page</p>
+</GuideContainer>

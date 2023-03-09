@@ -1,0 +1,14 @@
+---
+import GuideContainer from "../../components/GuideContainer.astro";
+
+const {
+  title = "Workplace Culture",
+  description = "Workplace culture can greatly impact job satisfaction and productivity." +
+    "Let's explore elements of a positive workplace culture and navigating red flags.",
+  url = "workplace-culture",
+} = Astro.props;
+---
+
+<GuideContainer title={title} description={description} url={url}>
+  <p>HERE IS THE BODY OF THE {title} page</p>
+</GuideContainer>

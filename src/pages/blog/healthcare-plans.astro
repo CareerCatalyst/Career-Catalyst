@@ -1,0 +1,15 @@
+---
+import GuideContainer from "../../components/GuideContainer.astro";
+
+const {
+  title = "Healthcare Plans",
+  description = "Choosing the right healthcare plan can be complicated. " +
+    "Let's takes the guesswork out of selecting the right plan by explaining" +
+    "the different types of plans, their benefits, and alternatives.",
+  url = "healthcare-plans",
+} = Astro.props;
+---
+
+<GuideContainer title={title} description={description} url={url}>
+  <p>HERE IS THE BODY OF THE {title} page</p>
+</GuideContainer>

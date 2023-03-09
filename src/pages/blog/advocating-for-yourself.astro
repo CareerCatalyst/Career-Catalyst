@@ -1,0 +1,14 @@
+---
+import GuideContainer from "../../components/GuideContainer.astro";
+
+const {
+  title = "Resumes",
+  description = "Your resume is your first impression to potential " +
+    "employers. Let's make yours stand out with tips and tricks from leading experts.",
+  url = "resumes",
+} = Astro.props;
+---
+
+<GuideContainer title={title} description={description} url={url}>
+  <p>HERE IS THE BODY OF THE {title} page</p>
+</GuideContainer>

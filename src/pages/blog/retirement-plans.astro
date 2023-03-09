@@ -1,0 +1,14 @@
+---
+import GuideContainer from "../../components/GuideContainer.astro";
+
+const {
+  title = "Retirement Plans",
+  description = "Let's talk different types of retirement plans, their benefits," +
+    " and alternatives so you can feel confident in planning for your future.",
+  url = "retirement-plans",
+} = Astro.props;
+---
+
+<GuideContainer title={title} description={description} url={url}>
+  <p>HERE IS THE BODY OF THE {title} page</p>
+</GuideContainer>
