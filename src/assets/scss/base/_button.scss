@@ -8,17 +8,18 @@
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  color: var(--neutral-900);
-  background-color: var(--primary-100);
-  border: 3px solid var(--primary-100);
+  color: var(--primary-100);
+  background-color: var(--primary-700);
+  border: 3px solid var(--primary-300);
   border-radius: 3px;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
 
   &:hover,
   &:focus {
     text-decoration: underline;
-    background-color: var(--primary-200);
-    border-color: var(--primary-200);
+    background-color: var(--neutral-100);
+    border-color: var(--neutral-600);
   }
 
   &:visited {
@@ -26,12 +27,14 @@
   }
 
   &.color-secondary {
-    background-color: var(--secondary-100);
+    color: var(--neutral-900);
+    background-color: var(--neutral-100);
     border-color: (var(--secondary-100));
 
     &:hover,
     &:focus {
-      background-color: var(--secondary-400);
+      color: var(--neutral-100);
+      background-color: var(--primary-700);
       border-color: var(--secondary-400);
     }
   }
