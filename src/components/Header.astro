@@ -1,7 +1,7 @@
 ---
-import Navigation from '../components/Navigation.astro'
-import { SkipLinks } from 'accessible-astro-components'
-import { Icon } from 'astro-icon'
+import Navigation from "../components/Navigation.astro";
+import { SkipLinks } from "accessible-astro-components";
+import { Icon } from "astro-icon";
 ---
 
 <header>
@@ -11,27 +11,50 @@ import { Icon } from 'astro-icon'
       <a href="/">Home</a>
     </li>
     <li class="menu-item">
-      <a href="/blog/">Blog</a>
+      <a href="/videos">Videos</a>
+    </li>
+    <li class="menu-item">
+      <a href="/blog/">Articles</a>
     </li>
     <li class="menu-item has-dropdown">
-      <button aria-haspopup="true" aria-expanded="false">Example Pages</button>
+      <button aria-haspopup="true" aria-expanded="false">English</button>
       <ul class="dropdown-menu">
         <li class="submenu-item">
-          <a href="/mdx-page/">MDX Page</a>
+          <a href="/mdx-page/">English</a>
         </li>
         <li class="submenu-item">
-          <a href="/markdown-page/">Markdown Page</a>
+          <a href="/markdown-page/">Spanish</a>
         </li>
         <li class="submenu-item">
-          <a href="/accessible-components">Accessible Components</a>
+          <a href="/accessible-components">Arabic</a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item has-dropdown">
+      <button aria-haspopup="true" aria-expanded="false">Resources</button>
+      <ul class="dropdown-menu">
+        <li class="submenu-item">
+          <a href="/mdx-page/">Holistic</a>
+        </li>
+        <li class="submenu-item">
+          <a href="/markdown-page/">Retirement</a>
+        </li>
+        <li class="submenu-item">
+          <a href="/accessible-components">Wealth</a>
         </li>
       </ul>
     </li>
     <li class="menu-item">
-      <a href="https://accessible-astro.dev" title="external link" rel="external noopener noreferrer">External Link</a>
+      <a title="external link" rel="external noopener noreferrer">About</a>
+    </li>
+    <li class="menu-item">
+      <a title="external link" rel="external noopener noreferrer">Newsletter</a>
     </li>
     <li class="menu-item type-icon">
-      <a href="https://github.com/markteekman/accessible-astro-starter" title="Go to the GitHub page">
+      <a
+        href="https://github.com/CareerCatalyst/Career-Catalyst "
+        title="Go to the GitHub page"
+      >
         <Icon pack="ion" name="logo-github" />
       </a>
     </li>
@@ -39,7 +62,7 @@ import { Icon } from 'astro-icon'
 </header>
 
 <style lang="scss" is:global>
-  @use '../assets/scss/base/outline' as *;
+  @use "../assets/scss/base/outline" as *;
 
   header {
     .type-icon a {
