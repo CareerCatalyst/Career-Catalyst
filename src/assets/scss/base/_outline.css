@@ -1,0 +1,1 @@
+*:focus,*:focus-visible{outline:2px dotted #000;outline-color:#000;outline-offset:0;box-shadow:0 0 0 2px #fff}*:focus:not(:focus-visible){outline:none;box-shadow:none}
