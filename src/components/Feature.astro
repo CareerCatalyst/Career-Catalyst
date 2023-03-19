@@ -1,7 +1,7 @@
 ---
-import { Icon } from 'astro-icon'
+import { Icon } from "astro-icon";
 
-const { icon = 'mdi:rocket', title = 'Title' } = Astro.props
+const { icon = "mdi:rocket", title = "Title" } = Astro.props;
 ---
 
 <div class="feature flex flex-col gap-4">
@@ -9,40 +9,60 @@ const { icon = 'mdi:rocket', title = 'Title' } = Astro.props
   <div class="content">
     <h3>{title}</h3>
     <p>
-      <slot>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, corporis.</slot>
+      <slot
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, corporis.</slot
+      >
     </p>
   </div>
 </div>
 
 <style lang="scss">
-  @use '../assets/scss/base/breakpoint' as *;
+  @use "../assets/scss/base/breakpoint" as *;
 
   .feature {
     position: relative;
-    padding: 2rem;
+    color: #f4f1d0;
     width: calc(100% - 0.5rem);
-    background-color: var(--neutral-100);
-    border: 3px solid var(--neutral-700);
-    border-radius: 1rem;
+    background-color: #16171d;
+    border-radius: 1.3rem;
+    padding-bottom: 0.6rem;
     box-shadow: 0 0 0 6px var(--neutral-100);
-
+    transition: all 0.3s ease-in-out;
     @include breakpoint(large) {
       width: 100%;
     }
 
-    &::after {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      background-color: var(--action-color);
-      inset: 1rem -1rem -1rem 1rem;
-      border-radius: 1rem;
+    &:hover {
+      transform: scale(1.05);
+      background: #101014;
     }
   }
 
   :global(.feature [astro-icon]) {
-    width: 4rem;
-    color: var(--action-color);
+    padding: 1rem 3rem;
+    width: 100%;
+    color: #f4f1d0;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    background: #506485;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      filter: brightness(1.09);
+    }
+  }
+
+  :global(.feature:nth-child(3n) [astro-icon]) {
+    background: #5d883a;
+  }
+  :global(.feature:nth-child(2n) [astro-icon]) {
+    background: #a6307f;
+  }
+  :global(.feature:nth-child(6n) [astro-icon]) {
+    background: #5d883a;
+  }
+  .content {
+    padding: 1em;
   }
 
   :global(.darkmode .feature) {
