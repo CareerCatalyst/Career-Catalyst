@@ -2,7 +2,7 @@
 
 ![social-preview-image](https://user-images.githubusercontent.com/3909046/219942674-9894853e-def8-4180-84b8-6b577dacfcaa.png)
 
-Accessible Astro Starter is a ready to use, SEO and a11y friendly blogging theme. It contains plenty of accessible components to build several page types, Tailwind CSS to help you build faster and example pages such as a dynamic Blog, 404, Markdown and MDX. This theme is designed to help you build your project faster and provide a solid base for accessibility!
+Accessible Astro Starter is a ready to use, SEO and a11y friendly topicsging theme. It contains plenty of accessible components to build several page types, Tailwind CSS to help you build faster and example pages such as a dynamic topics, 404, Markdown and MDX. This theme is designed to help you build your project faster and provide a solid base for accessibility!
 
 🚀 [Live Preview](https://accessible-astro.dev)
 
@@ -17,7 +17,7 @@ Accessible Astro Starter is a ready to use, SEO and a11y friendly blogging theme
 - Accessible landmarks such as `header`, `main`, `footer`, `section` and `nav`
 - Outline focus indicator which works on dark and light backgrounds
 - Several `aria` attributes which provide a better experience for screen reader users
-- `[...page].astro` and `[post].astro` demonstrate the use of dynamic routes and provide a basic blog with breadcrumbs and pagination
+- `[...page].astro` and `[post].astro` demonstrate the use of dynamic routes and provide a basic topics with breadcrumbs and pagination
 - `404.astro` provides a custom 404 error page which you can adjust to your needs
 - `Header.astro` component included in the `DefaultLayout.astro` layout
 - `Footer.astro` component included in the `DefaultLayout.astro` layout
