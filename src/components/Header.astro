@@ -2,6 +2,9 @@
 import Navigation from "../components/Navigation.astro";
 import { SkipLinks } from "accessible-astro-components";
 import { Icon } from "astro-icon";
+import Navigation from "../components/Navigation.astro";
+import { SkipLinks } from "accessible-astro-components";
+import { Icon } from "astro-icon";
 ---
 
 <header>
@@ -14,16 +17,16 @@ import { Icon } from "astro-icon";
       <a href="/guides/">guides</a>
     </li>
     <li class="menu-item has-dropdown">
-      <button aria-haspopup="true" aria-expanded="false">Example Pages</button>
+      <button aria-haspopup="true" aria-expanded="false">Resources</button>
       <ul class="dropdown-menu">
         <li class="submenu-item">
-          <a href="/mdx-page/">MDX Page</a>
+          <a href="/mdx-page/">Holistic</a>
         </li>
         <li class="submenu-item">
-          <a href="/markdown-page/">Markdown Page</a>
+          <a href="/markdown-page/">Retirement</a>
         </li>
         <li class="submenu-item">
-          <a href="/accessible-components">Accessible Components</a>
+          <a href="/accessible-components">Wealth</a>
         </li>
       </ul>
     </li>
@@ -46,6 +49,7 @@ import { Icon } from "astro-icon";
 </header>
 
 <style lang="scss" is:global>
+  @use "../assets/scss/base/outline" as *;
   @use "../assets/scss/base/outline" as *;
 
   header {
