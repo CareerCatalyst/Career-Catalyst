@@ -28,24 +28,29 @@ const { icon = "mdi:rocket", title = "Title", url } = Astro.props;
     position: relative;
     color: #f4f1d0;
     width: calc(100% - 0.5rem);
-    background-color: #16171d;
+    background-color: var(--neutral-900);
     border-radius: 1.3rem;
     padding-bottom: 0.6rem;
     box-shadow: 0 0 0 6px var(--neutral-100);
     transition: all 0.3s ease-in-out;
+    text-decoration: none !important;
     @include breakpoint(large) {
       width: 100%;
     }
 
-    &::after {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      background-color: var(--action-color);
-      inset: 1rem -1rem -1rem 1rem;
-      border-radius: 1rem;
+    &:hover {
+      transform: scale(1.05);
+      color: #f4f1d0;
     }
   }
+
+  .content * {
+    text-decoration: none !important;
+  }
+  // .feature slot:hover {
+  //   color: red !important;
+  //   background: red;
+  // }
 
   :global(.feature [astro-icon]) {
     padding: 1rem 3rem;
