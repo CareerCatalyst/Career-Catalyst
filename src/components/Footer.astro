@@ -1,8 +1,11 @@
 ---
-const currentYear = new Date().getFullYear();
+import NewsLetter from './NewsLetter.astro'
+
+const currentYear = new Date().getFullYear()
 ---
 
 <footer>
+  <NewsLetter />
   <section class="py-8">
     <div class="container">
       <p>

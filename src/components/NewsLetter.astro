@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="newsletter-signup flex flex-col items-center gap-12 rounded-xl md:p-24">
+    <h2 class="text-center text-3xl md:text-5xl">JOIN OUR NEWSLETTER</h2>
+    <p class="text-xl">Subscribe to our newsletter to receive the latest posts. No spam.</p>
+    
+    <form class="grid grid-cols-2 gap-4 items-center" action="POST">
+      <div class="col-span-2 flex flex-col md:flex-row md:items-center">
+        <label class="font-bold text-xl px-2" for="">Name:</label>
+        <input type="text" name="name" value="" id="name" required>
+
+        <label class="font-bold text-xl px-2" for="">Email:</label>
+        <input type="email" name="email" value="" id="email" required>
+      </div>
+
+      <div class="col-span-2 flex justify-center pt-4">
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+
+    <a href="/">NO THANKS</a>
+
+    <span>Don't have an account? <a href="/signup">Sign Up</a></span>
+  </div>
+</div>
+
+<style lang="scss">
+  .newsletter-signup {
+    color: var(--neutral-900);
+    background-image: linear-gradient(40deg, var(--primary-100), var(--secondary-200));
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+    padding: 3rem;
+  }
+
+  .newsletter-signup button,
+  .newsletter-signup button:visited {
+    padding: 1rem 14.75rem;
+    color: var(--neutral-900);
+    font-weight: bold;
+    border: 3px solid var(--neutral-900);
+    border-radius: 3px;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+
+    &:where(:hover, :focus) {
+      color: var(--neutral-100);
+      background-color: var(--neutral-900);
+      text-decoration: underline;
+    }
+  }
+
+  .newsletter-signup input[type="text"],
+  .newsletter-signup input[type="email"] {
+    border: 3px solid var(--neutral-900);
+    border-radius: 8px;
+  }
+</style>
