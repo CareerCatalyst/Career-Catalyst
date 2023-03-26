@@ -1,9 +1,9 @@
 {
-  "name": "accessible-astro-starter",
-  "description": "An Accessible Starter Theme for Astro including several accessiblity features and tools to help you build faster.",
-  "version": "2.0.0",
-  "author": "Mark Teekman",
-  "homepage": "https://accessible-astro.dev",
+  "name": "career-catalyst",
+  "description": "An astro-powered guide for breaking down topics of corporate America for first-generation corporate America workers.",
+  "version": "1.0.0",
+  "author": "Career Catalyst",
+  "homepage": "https://github.com/careercatalyst",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

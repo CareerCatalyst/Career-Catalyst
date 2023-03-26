@@ -1,0 +1,14 @@
+---
+import GuideContainer from "../../components/GuideContainer.astro";
+import { PAGES } from "../../utils/constants";
+
+const {
+  title = PAGES.NEGOTIATING_PAY.title,
+  description = PAGES.NEGOTIATING_PAY.description,
+  url = PAGES.NEGOTIATING_PAY.url,
+} = Astro.props;
+---
+
+<GuideContainer title={title} description={description} url={url}>
+  <p>HERE IS THE BODY OF THE {title} page</p>
+</GuideContainer>

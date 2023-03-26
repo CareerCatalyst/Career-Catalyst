@@ -2,6 +2,9 @@
 import Navigation from "../components/Navigation.astro";
 import { SkipLinks } from "accessible-astro-components";
 import { Icon } from "astro-icon";
+import Navigation from "../components/Navigation.astro";
+import { SkipLinks } from "accessible-astro-components";
+import { Icon } from "astro-icon";
 ---
 
 <header>
@@ -11,24 +14,7 @@ import { Icon } from "astro-icon";
       <a href="/">Home</a>
     </li>
     <li class="menu-item">
-      <a href="/videos">Videos</a>
-    </li>
-    <li class="menu-item">
-      <a href="/blog/">Articles</a>
-    </li>
-    <li class="menu-item has-dropdown">
-      <button aria-haspopup="true" aria-expanded="false">English</button>
-      <ul class="dropdown-menu">
-        <li class="submenu-item">
-          <a href="/mdx-page/">English</a>
-        </li>
-        <li class="submenu-item">
-          <a href="/markdown-page/">Spanish</a>
-        </li>
-        <li class="submenu-item">
-          <a href="/accessible-components">Arabic</a>
-        </li>
-      </ul>
+      <a href="/guides/">guides</a>
     </li>
     <li class="menu-item has-dropdown">
       <button aria-haspopup="true" aria-expanded="false">Resources</button>
@@ -45,14 +31,15 @@ import { Icon } from "astro-icon";
       </ul>
     </li>
     <li class="menu-item">
-      <a title="external link" rel="external noopener noreferrer">About</a>
-    </li>
-    <li class="menu-item">
-      <a title="external link" rel="external noopener noreferrer">Newsletter</a>
+      <a
+        href="https://accessible-astro.dev"
+        title="external link"
+        rel="external noopener noreferrer">External Link</a
+      >
     </li>
     <li class="menu-item type-icon">
       <a
-        href="https://github.com/CareerCatalyst/Career-Catalyst "
+        href="https://github.com/markteekman/accessible-astro-starter"
         title="Go to the GitHub page"
       >
         <Icon pack="ion" name="logo-github" />
@@ -62,6 +49,7 @@ import { Icon } from "astro-icon";
 </header>
 
 <style lang="scss" is:global>
+  @use "../assets/scss/base/outline" as *;
   @use "../assets/scss/base/outline" as *;
 
   header {
