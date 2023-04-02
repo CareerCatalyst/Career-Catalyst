@@ -1,32 +1,42 @@
 <div class="container">
   <h1>Welcome to Career Catalyst 👋🏾</h1>
   <p>
-    Welcome to Career Catalyst! Our mission is to <span class="empha"
-      >empower first-generation corporate America workers
-    </span> to navigate the corporate landscape, achieve their professional goals,
-    and build successful careers. We've designed our website to provide you with
-    all the tools and resources you need to succeed.
+    Welcome to Career Catalyst! Our mission is to <h1 class="empha">
+      empower first-generation corporate America workers
+    </h1>
+    <span class="stabilize"
+      >to navigate the corporate landscape, achieve their professional goals,
+      and build successful careers. We've designed our website to provide you
+      with all the tools and resources you need to succeed.</span
+    >
   </p>
+
   <h1>Let’s get started</h1>
   <p>
-    To get started, we recommend <span class="empha">
-      exploring our various topics</span
-    >, including retirement planning, healthcare planning, overcoming imposter
-    syndrome, and setting meaningful career goals. Each topic has a breakdown
-    that includes glossary terms and linked videos, as well as external
-    resources to help you dive deeper into each subject.
-  </p>
-  <p>
-    Our goal is to provide you with the support and guidance you need to succeed
-    in your career. If you have any questions or would like to recommend a new
-    topic be added, don't hesitate to contact us.
+    To get started, we recommend <h1 class="empha">
+      exploring our various topics,
+    </h1>
+    <span class="stabilize">
+      including retirement planning, healthcare planning, overcoming imposter
+      syndrome, and setting meaningful career goals. Each topic has a breakdown
+      that includes glossary terms and linked videos, as well as external
+      resources to help you dive deeper into each subject. <br /> Our goal is to
+      provide you with the support and guidance you need to succeed in your career.
+      If you have any questions or would like to recommend a new topic be added,
+      don't hesitate to contact us.
+    </span>
   </p>
 </div>
 
 <style lang="scss">
   .empha {
     font-family: "ibm_plex_sansbold", sans-serif;
-    font-weight: 800;
+    display: contents;
+    font-size: 1.3em;
+
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
   }
 
   .container * {
@@ -34,8 +44,8 @@
   }
 
   .container {
-    padding-top: 1em;
-    padding-bottom: 3em;
+    padding: 1em 0em 3em 0em;
+    max-width: 60em;
   }
   .container h1 {
     margin: 0.09em 0em;
@@ -43,9 +53,15 @@
     font-family: "ibm_plex_sansbold", sans-serif;
   }
   p {
-    max-width: 45em;
+    max-width: 40em;
     font-size: 1.3rem;
-    line-height: 1.3em;
-    margin: 0.3em 0em;
+
+    display: inline-block;
+  }
+
+  .stabilize {
+    font-size: 1.3rem;
+    padding-top: -10em;
+    line-height: 2.2em;
   }
 </style>
