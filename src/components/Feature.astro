@@ -11,10 +11,7 @@ const { icon = "mdi:rocket", title = "Title", url } = Astro.props;
     <div class="content">
       <h3>{title}</h3>
       <p>
-        <slot
-          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
-          corporis.</slot
-        >
+        <slot name="slotFeature">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, corporis.</slot>
       </p>
     </div>
   </a>
