@@ -137,7 +137,7 @@ body {
 
   a:not(.button) {
     color: var(--action-color);
-    text-decoration: underline;
+    font-weight: bold;
 
     &:visited {
       color: var(--action-color);
