@@ -2,10 +2,8 @@
 import DefaultLayout from "../layouts/DefaultLayout.astro";
 import Hero from "../components/Hero.astro";
 import Intro from "../components/Intro.astro";
-import Feature from "../components/Feature.astro";
-import Counter from "../components/Counter.astro";
-import ContentMedia from "../components/ContentMedia.astro";
 import { PAGES } from "../utils/constants.js";
+import GuideCard from "../components/GuideCard.astro";
 ---
 
 <DefaultLayout title="Home">
@@ -15,88 +13,66 @@ import { PAGES } from "../utils/constants.js";
       <Intro />
       <h2 class="mb-16 text-6xl">Guides</h2>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <Feature
+        <GuideCard
           icon="tabler:old"
           title={PAGES.RETIREMENT_PLANS.title}
           url={`/guides/${PAGES.RETIREMENT_PLANS.url}`}
         />
-        <Feature
+        <GuideCard
           icon="ic:outline-balance"
           title={PAGES.WORK_LIFE_BALANCE.title}
           url={`/guides/${PAGES.WORK_LIFE_BALANCE.url}`}
-        >
-          {PAGES.WORK_LIFE_BALANCE.description}
-        </Feature>
-        <Feature
+        />
+        <GuideCard
           icon="icon-park-outline:id-card-v"
           title={PAGES.RESUMES.title}
           url={`/guides/${PAGES.RESUMES.url}`}
-        >
-          {PAGES.RESUMES.description}
-        </Feature>
-        <Feature
+        />
+        <GuideCard
           icon="ph:mask-sad-bold"
           title={PAGES.IMPOSTER_SYNDROME.title}
           url={`/guides/${PAGES.IMPOSTER_SYNDROME.url}`}
-        >
-          {PAGES.IMPOSTER_SYNDROME.description}
-        </Feature>
-        <Feature
+        />
+        <GuideCard
           icon="ri:health-book-line"
           title={PAGES.HEALTHCARE_PLANS.title}
           url={`/guides/${PAGES.HEALTHCARE_PLANS.url}`}
-        >
-          {PAGES.HEALTHCARE_PLANS.description}
-        </Feature>
-        <Feature
+        />
+        <GuideCard
           icon="mdi:people-group-outline"
           title={PAGES.BUILDING_YOUR_NETWORK.title}
           url={`/guides/${PAGES.BUILDING_YOUR_NETWORK.url}`}
-        >
-          {PAGES.BUILDING_YOUR_NETWORK.description}
-        </Feature>
-        <Feature
+        />
+        <GuideCard
           icon="ic:baseline-work-outline"
           title={PAGES.CAREER_DEVELOPMENT.title}
           url={`/guides/${PAGES.CAREER_DEVELOPMENT.url}`}
-        >
-          {PAGES.CAREER_DEVELOPMENT.description}
-        </Feature>
-        <Feature
+        />
+        <GuideCard
           icon="ph:money-bold"
           title={PAGES.NEGOTIATING_PAY.title}
           url={`/guides/${PAGES.NEGOTIATING_PAY.url}`}
-        >
-          {PAGES.NEGOTIATING_PAY.description}
-        </Feature>
-        <Feature
-          icon="icon-park-outline:people-speak"
+        />
+        <GuideCard
+          GuideCard="icon-park-outline:people-speak"
           title={PAGES.ADVOCATING_FOR_YOURSELF.title}
           url={`/guides/${PAGES.ADVOCATING_FOR_YOURSELF.url}`}
-        >
-          {PAGES.ADVOCATING_FOR_YOURSELF.description}
-        </Feature>
-        <Feature
+        />
+        <GuideCard
           icon="vaadin:workplace"
           title={PAGES.WORKPLACE_CULTURE.title}
           url={`/guides/${PAGES.WORKPLACE_CULTURE.url}`}
-        >
-          {PAGES.WORKPLACE_CULTURE.description}
-        </Feature>
-        <Feature
+        />
+        <GuideCard
           icon="ic:sharp-access-time"
           title={PAGES.INTER_TIMEZONE_WORK.title}
           url={`/guides/${PAGES.INTER_TIMEZONE_WORK.url}`}
-        >
-          {PAGES.INTER_TIMEZONE_WORK.description}
-        </Feature>
-        <Feature
+        />
+        <GuideCard
           icon="uil:award"
           title={PAGES.PERSONAL_BRAND.title}
           url={`/guides/${PAGES.PERSONAL_BRAND.url}`}
-        >
-          {PAGES.PERSONAL_BRAND.description}
-        </Feature>
+        />
       </div>
     </div>
   </section>
