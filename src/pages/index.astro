@@ -2,10 +2,7 @@
 import DefaultLayout from "../layouts/DefaultLayout.astro";
 import Hero from "../components/Hero.astro";
 import Intro from "../components/Intro.astro";
-import Feature from "../components/Feature.astro";
-import Counter from "../components/Counter.astro";
-import ContentMedia from "../components/ContentMedia.astro";
-import { PAGES } from "../utils/constants.js";
+import GuideCardContainer from "../components/GuideCardContainer.astro";
 ---
 
 <DefaultLayout title="Home">
@@ -13,6 +10,7 @@ import { PAGES } from "../utils/constants.js";
   <section class="my-64">
     <div class="container">
       <Intro />
+<<<<<<< HEAD
       <h2 class="mb-16 text-6xl">Guides</h2>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
         <Feature
@@ -111,8 +109,20 @@ import { PAGES } from "../utils/constants.js";
         <Counter count="500" title="Commits" sub="Merged" />
         <Counter count="18+" title="Months" sub="Since launch" />
       </div>
+=======
+      <GuideCardContainer />
+>>>>>>> 9fcf2adc18fc8aff79ced186ab850b5673509358
     </div>
   </section>
 </DefaultLayout>
 
-<style lang="scss"></style>
+<style lang="scss">
+  .line {
+    width: 100%;
+    height: 2px;
+    background: #292524;
+  }
+  body {
+    background: #efedea;
+  }
+</style>

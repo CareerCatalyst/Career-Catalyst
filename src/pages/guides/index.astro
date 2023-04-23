@@ -1,4 +1,5 @@
 ---
+import GuideCardContainer from "../../components/GuideCardContainer.astro";
 import DefaultLayout from "../../layouts/DefaultLayout.astro";
 import { Card, Pagination } from "accessible-astro-components";
 
@@ -29,38 +30,7 @@ const { page } = Astro.props;
   </section>
   <section class="my-12">
     <div class="container">
-      <p class="text-sm">
-        <em
-          >Post {page.start + 1} through {page.end + 1} of {page.total} total posts</em
-        >
-      </p>
-      <ul class="my-3">
-        {
-          page.data.map((post) => (
-            <li>
-              <Card
-                url={"/topics/" + post.title.replaceAll(" ", "-").toLowerCase()}
-                title={post.title}
-                footer={"userId:" + post.userId}
-              >
-                {post.body}
-              </Card>
-            </li>
-          ))
-        }
-      </ul>
-      <div class="mt-12 grid place-content-center">
-        <Pagination
-          firstPage={page.url.prev ? "/topics" : null}
-          previousPage={page.url.prev ? page.url.prev : null}
-          nextPage={page.url.next ? page.url.next : null}
-          lastPage={page.url.next
-            ? `/topics/${Math.round(page.total / page.size)}`
-            : null}
-          currentPage={page.currentPage}
-          totalPages={Math.round(page.total / page.size)}
-        />
-      </div>
+      <GuideCardContainer />
     </div>
   </section>
 </DefaultLayout>
