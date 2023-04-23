@@ -2,8 +2,7 @@
 import DefaultLayout from "../layouts/DefaultLayout.astro";
 import Hero from "../components/Hero.astro";
 import Intro from "../components/Intro.astro";
-import { PAGES } from "../utils/constants.js";
-import GuideCard from "../components/GuideCard.astro";
+import GuideCardContainer from "../components/GuideCardContainer.astro";
 ---
 
 <DefaultLayout title="Home">
@@ -11,72 +10,9 @@ import GuideCard from "../components/GuideCard.astro";
   <section class="my-64">
     <div class="container">
       <Intro />
-      <h2 class="mb-16 text-6xl">Guides</h2>
-      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <GuideCard
-          icon="tabler:old"
-          title={PAGES.RETIREMENT_PLANS.title}
-          url={`/guides/${PAGES.RETIREMENT_PLANS.url}`}
-        />
-        <GuideCard
-          icon="ic:outline-balance"
-          title={PAGES.WORK_LIFE_BALANCE.title}
-          url={`/guides/${PAGES.WORK_LIFE_BALANCE.url}`}
-        />
-        <GuideCard
-          icon="icon-park-outline:id-card-v"
-          title={PAGES.RESUMES.title}
-          url={`/guides/${PAGES.RESUMES.url}`}
-        />
-        <GuideCard
-          icon="ph:mask-sad-bold"
-          title={PAGES.IMPOSTER_SYNDROME.title}
-          url={`/guides/${PAGES.IMPOSTER_SYNDROME.url}`}
-        />
-        <GuideCard
-          icon="ri:health-book-line"
-          title={PAGES.HEALTHCARE_PLANS.title}
-          url={`/guides/${PAGES.HEALTHCARE_PLANS.url}`}
-        />
-        <GuideCard
-          icon="mdi:people-group-outline"
-          title={PAGES.BUILDING_YOUR_NETWORK.title}
-          url={`/guides/${PAGES.BUILDING_YOUR_NETWORK.url}`}
-        />
-        <GuideCard
-          icon="ic:baseline-work-outline"
-          title={PAGES.CAREER_DEVELOPMENT.title}
-          url={`/guides/${PAGES.CAREER_DEVELOPMENT.url}`}
-        />
-        <GuideCard
-          icon="ph:money-bold"
-          title={PAGES.NEGOTIATING_PAY.title}
-          url={`/guides/${PAGES.NEGOTIATING_PAY.url}`}
-        />
-        <GuideCard
-          GuideCard="icon-park-outline:people-speak"
-          title={PAGES.ADVOCATING_FOR_YOURSELF.title}
-          url={`/guides/${PAGES.ADVOCATING_FOR_YOURSELF.url}`}
-        />
-        <GuideCard
-          icon="vaadin:workplace"
-          title={PAGES.WORKPLACE_CULTURE.title}
-          url={`/guides/${PAGES.WORKPLACE_CULTURE.url}`}
-        />
-        <GuideCard
-          icon="ic:sharp-access-time"
-          title={PAGES.INTER_TIMEZONE_WORK.title}
-          url={`/guides/${PAGES.INTER_TIMEZONE_WORK.url}`}
-        />
-        <GuideCard
-          icon="uil:award"
-          title={PAGES.PERSONAL_BRAND.title}
-          url={`/guides/${PAGES.PERSONAL_BRAND.url}`}
-        />
-      </div>
+      <GuideCardContainer />
     </div>
   </section>
-  <div class="line"></div>
 </DefaultLayout>
 
 <style lang="scss">
