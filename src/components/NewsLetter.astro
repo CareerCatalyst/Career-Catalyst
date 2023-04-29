@@ -1,19 +1,26 @@
+---
+import dotenv from "dotenv"
+dotenv.config()
+---
+
 <div class="container">
   <div class="newsletter-signup flex flex-col items-center gap-12 rounded-xl md:p-24">
     <h2 class="text-center text-3xl md:text-5xl">JOIN OUR NEWSLETTER</h2>
     <p class="text-xl">Subscribe to our newsletter to receive the latest posts. No spam.</p>
     
-    <form class="grid grid-cols-2 gap-4 items-center" action="POST">
+    <form class="grid grid-cols-2 gap-4 items-center" action={process.env.FORM_SECRET} method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div class="col-span-2 flex flex-col md:flex-row md:items-center">
-        <label class="font-bold text-xl px-2" for="">Name:</label>
-        <input type="text" name="name" value="" id="name" required>
+        <label class="font-bold text-xl px-2" for="mce-FNAME">Name:</label>
+        <input type="text" name="FNAME" value="" id="mce-FNAME" required>
 
-        <label class="font-bold text-xl px-2" for="">Email:</label>
-        <input type="email" name="email" value="" id="email" required>
+        <label class="font-bold text-xl px-2" for="mce-EMAIL">Email:</label>
+        <input type="email" name="EMAIL" value="" id="mce-EMAIL-HELPERTEXT" required>
       </div>
 
+    <div  class="hidden"><input type="text" name="b_6c6f3aca37af3c115d63983e8_130b840abe" tabindex="-1" value=""/></div>
+
       <div class="col-span-2 flex justify-center pt-4">
-        <button type="submit">Subscribe</button>
+        <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
       </div>
     </form>
 
