@@ -1,6 +1,6 @@
 ---
-import dotenv from "dotenv"
-dotenv.config()
+import { config } from "dotenv"
+config();
 ---
 
 <div class="container">
@@ -8,7 +8,7 @@ dotenv.config()
     <h2 class="text-center text-3xl md:text-5xl">JOIN OUR NEWSLETTER</h2>
     <p class="text-xl">Subscribe to our newsletter to receive the latest posts. No spam.</p>
     
-    <form class="grid grid-cols-2 gap-4 items-center" action={process.env.FORM_SECRET} method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <form class="grid grid-cols-2 gap-4 items-center" action={import.meta.env.FORM_SECRET} method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div class="col-span-2 flex flex-col md:flex-row md:items-center">
         <label class="font-bold text-xl px-2" for="mce-FNAME">Name:</label>
         <input type="text" name="FNAME" value="" id="mce-FNAME" required>
