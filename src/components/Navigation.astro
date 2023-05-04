@@ -16,7 +16,7 @@ import { DarkMode } from "accessible-astro-components";
     <div class="wrapper">
       <nav class="desktop-menu" aria-label="Main navigation desktop">
         <ul class="menu">
-          <slot name="slotNavDesktop"/>
+          <slot name="slotNav"/>
         </ul>
       </nav>
       <DarkMode />
@@ -24,7 +24,7 @@ import { DarkMode } from "accessible-astro-components";
     </div>
     <nav class="mobile-menu" aria-label="Main navigation mobile">
       <ul class="menu">
-        <slot name="slotNavMobile"/>
+        <slot name="slotNav"/>
       </ul>
     </nav>
   </div>
