@@ -19,7 +19,7 @@ import { DarkMode } from "accessible-astro-components";
           <slot name="slotNav"/>
         </ul>
       </nav>
-      <DarkMode />
+      <!-- <DarkMode /> -->
       <ResponsiveToggle />
     </div>
     <nav class="mobile-menu" aria-label="Main navigation mobile">
@@ -237,6 +237,7 @@ import { DarkMode } from "accessible-astro-components";
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      margin: 0 auto;
     }
 
     &.is-desktop {
