@@ -1,6 +1,5 @@
 ---
 import { Icon } from "astro-icon";
-import { Icon } from "astro-icon";
 
 const { icon = "mdi:rocket", title = "Title", url } = Astro.props;
 ---
@@ -10,12 +9,6 @@ const { icon = "mdi:rocket", title = "Title", url } = Astro.props;
     <Icon name={icon} />
     <div class="content">
       <h3>{title}</h3>
-      <p>
-        <slot
-          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
-          corporis.</slot
-        >
-      </p>
     </div>
   </a>
 </div>
@@ -28,23 +21,28 @@ const { icon = "mdi:rocket", title = "Title", url } = Astro.props;
     position: relative;
     color: #f4f1d0;
     width: calc(100% - 0.5rem);
-    background-color: #16171d;
+    background-color: var(--neutral-900);
     border-radius: 1.3rem;
     padding-bottom: 0.6rem;
-    box-shadow: 0 0 0 6px var(--neutral-100);
     transition: all 0.3s ease-in-out;
+    text-decoration: none !important;
+
     @include breakpoint(large) {
       width: 100%;
     }
 
-    &::after {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      background-color: var(--action-color);
-      inset: 1rem -1rem -1rem 1rem;
-      border-radius: 1rem;
+    &:hover {
+      transform: scale(1.05);
+      color: #f4f1d0;
     }
+
+    h3 {
+      padding-bottom: 0.5em;
+    }
+  }
+
+  .content * {
+    text-decoration: none !important;
   }
 
   :global(.feature [astro-icon]) {

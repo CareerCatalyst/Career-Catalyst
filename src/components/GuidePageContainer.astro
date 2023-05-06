@@ -1,5 +1,4 @@
 ---
-import { Breadcrumbs, BreadcrumbsItem } from "accessible-astro-components";
 import DefaultLayout from "../layouts/DefaultLayout.astro";
 
 const { title, description, url } = Astro.props;
@@ -13,7 +12,7 @@ const { title, description, url } = Astro.props;
   </section>
   <section class="my-12">
     <div class="container">
-      <slot />
+      <slot name="slotGuideContainer"/>
     </div>
   </section>
 </DefaultLayout>

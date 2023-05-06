@@ -10,8 +10,8 @@ const { src = "/astronaut-hero-img.webp" } = Astro.props;
     <div class="items-center gap-24 lg:grid-cols-2">
       <div class="flex flex-col items-center gap-8 md:items-start">
         <h1 class="text-center text-6xl md:text-left lg:text-8xl">
-          <slot
-            ><span class="text-gradient"
+          <slot name="slotHero">
+            <span class="text-gradient"
               >Breaking down the <br /> barriers of corporate America</span
             >
             <br />
@@ -68,7 +68,7 @@ const { src = "/astronaut-hero-img.webp" } = Astro.props;
     background: linear-gradient(
       315deg,
       var(--primary-200) 25%,
-      var(--secondary-400)
+      var(--primary-400)
     );
     background-clip: border-box;
     -webkit-background-clip: text;

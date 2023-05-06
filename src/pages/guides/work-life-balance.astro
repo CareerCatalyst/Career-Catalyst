@@ -1,5 +1,5 @@
 ---
-import GuideContainer from "../../components/GuideContainer.astro";
+import GuidePageContainer from "../../components/GuidePageContainer.astro";
 import { PAGES } from "../../utils/constants";
 
 const {
@@ -9,6 +9,6 @@ const {
 } = Astro.props;
 ---
 
-<GuideContainer title={title} description={description} url={url}>
+<GuidePageContainer title={title} description={description} url={url}>
   <p>HERE IS THE BODY OF THE {title} page</p>
-</GuideContainer>
+</GuidePageContainer>

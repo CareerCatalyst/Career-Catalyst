@@ -10,13 +10,13 @@ import { Icon } from "astro-icon";
 <header>
   <SkipLinks />
   <Navigation>
-    <li class="menu-item">
+    <li class="menu-item" slot="slotNav">
       <a href="/">Home</a>
     </li>
-    <li class="menu-item">
-      <a href="/guides/">guides</a>
+    <li class="menu-item" slot="slotNav">
+      <a href="/guides/">Guides</a>
     </li>
-    <li class="menu-item has-dropdown">
+    <li class="menu-item has-dropdown" slot="slotNav">
       <button aria-haspopup="true" aria-expanded="false">Resources</button>
       <ul class="dropdown-menu">
         <li class="submenu-item">
@@ -30,14 +30,14 @@ import { Icon } from "astro-icon";
         </li>
       </ul>
     </li>
-    <li class="menu-item">
+    <li class="menu-item" slot="slotNav">
       <a
         href="https://accessible-astro.dev"
         title="external link"
         rel="external noopener noreferrer">External Link</a
       >
     </li>
-    <li class="menu-item type-icon">
+    <li class="menu-item type-icon" slot="slotNav">
       <a
         href="https://github.com/markteekman/accessible-astro-starter"
         title="Go to the GitHub page"
@@ -61,7 +61,7 @@ import { Icon } from "astro-icon";
         width: 30px;
 
         path {
-          fill: var(--action-color);
+          fill: var(--primary-300);
           transition: fill 0.2s ease-in-out;
         }
       }
