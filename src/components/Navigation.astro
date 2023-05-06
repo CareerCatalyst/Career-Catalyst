@@ -3,11 +3,11 @@ import ResponsiveToggle from "./ResponsiveToggle.astro";
 import { DarkMode } from "accessible-astro-components";
 ---
 
-<div id="main-navigation" class="is-desktop py-4">
+<div id="main-navigation" class="is-desktop py-2">
   <div class="container">
     <a href="/" class="flex items-center gap-2 !no-underline">
       <img
-        src={(await import("../assets/img/logo.webp")).default}
+        src={(await import("../assets/img/logo.svg")).default}
         alt="Your Logo"
         width="83"
         height="69"
@@ -19,7 +19,7 @@ import { DarkMode } from "accessible-astro-components";
           <slot name="slotNav"/>
         </ul>
       </nav>
-      <DarkMode />
+      <!-- <DarkMode /> -->
       <ResponsiveToggle />
     </div>
     <nav class="mobile-menu" aria-label="Main navigation mobile">
@@ -237,6 +237,7 @@ import { DarkMode } from "accessible-astro-components";
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      margin: 0 auto;
     }
 
     &.is-desktop {
