@@ -2,6 +2,41 @@
 import { config } from "dotenv"
 config();
 ---
+<script>
+const form = document.querySelector('form');
+const message = document.getElementById('message');
+
+form.addEventListener('submit', async function(event) {
+    event.preventDefault();
+  try {
+    await Promise.race([
+      new Promise((resolve) => {
+        resolve(()=> {
+          form.submit();
+          // Update message element with success message
+          message.textContent = 'Form submitted successfully!';
+          message.classList.remove('error');
+          message.classList.add('success');
+        });
+      }),
+      new Promise((reject) => {
+					setTimeout(() => {
+						reject(new Error('Promise timed out: Mailchimp not responding'));
+            message.textContent = 'An error occurred while submitting the form.';
+            message.classList.remove('success');
+            message.classList.add('error');
+					}, 5000);
+				}),
+    ]);    
+  } catch (error) {
+    console.error(error);
+    // Update message element with error message
+    message.textContent = 'An error occurred while signing up.';
+    message.classList.remove('success');
+    message.classList.add('error');
+  }
+});
+</script>
 
 <div class="container">
   <div class="newsletter-signup flex flex-col items-center gap-12 rounded-xl md:p-24">
@@ -18,7 +53,7 @@ config();
       </div>
 
     <div  class="hidden"><input type="text" name="b_6c6f3aca37af3c115d63983e8_130b840abe" tabindex="-1" value=""/></div>
-
+      <div id="message"></div>
       <div class="col-span-2 flex justify-center pt-4">
         <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
       </div>
@@ -60,5 +95,18 @@ config();
   .newsletter-signup input[type="email"] {
     border: 3px solid var(--neutral-900);
     border-radius: 8px;
+  }
+
+  .error {
+    padding: .3rem;
+    background-color: red;
+    border-radius: 6px;
+    color: white;
+  }
+  .success {
+    padding: .3rem;
+    background-color: green;
+    border-radius: 6px;
+    color: white;
   }
 </style>
