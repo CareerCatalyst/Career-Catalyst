@@ -122,3 +122,9 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Ignore Cypress files
+/cypress/videos/
+/cypress/screenshots/
+/cypress/fixtures/
+/cypress/results/
