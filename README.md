@@ -2,13 +2,13 @@
 
 <a name="readme-top"></a>
 
-
+<!-- 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 <!-- PROJECT LOGO -->
 <br />
@@ -70,23 +70,24 @@
 Our mission is to empower first-generation corporate America workers to navigate the corporate landscape, achieve their professional goals, and build successful careers. We've designed this guide to provide you with some of the tools you need to succeed.
 
 Here's why:
+- Empowerment: This project was created to empower first-generation corporate America workers by providing them with the necessary resources and guidance to navigate the corporate landscape. It aims to bridge the gap and empower individuals who may face unique challenges and barriers in their professional journeys.
 
-- Your time should be focused on creating something amazing. A project that solves a problem and helps others
-- You shouldn't be doing the same tasks over and over like creating a README from scratch
-- You should implement DRY principles to the rest of your life :smile:
+- Professional Goal Achievement: The project's goal is to help first-generation workers achieve their professional goals. By offering valuable tools, insights, and advice, it aims to equip them with the knowledge and skills required to navigate the corporate world successfully and make progress in their careers.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+- Career Building: This project aims to support first-generation workers in building successful careers. It provides a comprehensive guide that covers various aspects of corporate life, such as networking, communication, personal branding, and career advancement strategies. By leveraging this guide, individuals can develop the necessary skills and strategies to thrive in their professional endeavors.
 
-Use the `BLANK_README.md` to get started.
+We firmly believe that everyone deserves an equal opportunity to succeed in their professional endeavors, regardless of their background or circumstances. Recognizing the unique challenges faced by first-generation corporate America workers, we embarked on this project to address the gaps in support and resources they may encounter. Our motivation stems from the desire to empower individuals and provide them with the necessary tools and knowledge to navigate the corporate landscape successfully. Through this project, we hope to inspire confidence, foster personal growth, and enable our audience to build fulfilling and prosperous careers.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Built with passion, expertise, and a commitment using the following frameworks/libraries used to bootstrap your project. 
 
-- [![Next][next.js]][next-url]
-- [![React][react.js]][react-url]
+- ![astro](https://github.com/CareerCatalyst/.github/assets/20276785/28aaee7d-8ad6-4018-b888-232793734e53)
+- ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
+- ![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
+- ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,50 +95,32 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get started with this project, follow the steps below:
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+1. Clone the repository:
    ```
-3. Install NPM packages
-   ```sh
+   git clone https://github.com/CareerCatalyst/<repository-name>.git
+   ```
+2. Navigate to the project directory:
+   ```
+   cd <repository-name>
+   ```
+3. Install the required dependencies:
+   ```
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = "ENTER YOUR API";
-   ```
+4. [Add any additional steps or instructions required to set up and configure the project]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- USAGE EXAMPLES -->
-
-## Usage
+<!-- ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- ROADMAP -->
-
+<!-- 
 ## Roadmap
 
 - [x] Add Changelog
@@ -150,23 +133,32 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-<!-- CONTRIBUTING -->
+<!-- CONTRIBUTING --> 
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. We welcome contributions from the community to make this project even better. If you would like to contribute, please follow these steps:
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+1. Fork the repository.
+2. Create a new branch for your contribution:
+   ```
+   git checkout -b my-contribution
+   ```
+3. Make your changes and enhancements to the project.
+4. Test your changes to ensure they work as expected.
+5. Commit your changes:
+   ```
+   git commit -m "Add my contribution"
+   ```
+6. Push your changes to your forked repository:
+   ```
+   git push origin my-contribution
+   ```
+7. Open a pull request in this repository, explaining the purpose and details of your contribution.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
+We appreciate your time and effort in helping us improve this project. Together, we can create a valuable resource that empowers first-generation corporate America workers and strengthens their professional journeys. Thank you for your contributions!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
