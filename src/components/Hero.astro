@@ -4,8 +4,7 @@ import { Icon } from "astro-icon";
 const { src = "/astronaut-hero-img.webp" } = Astro.props;
 ---
 
-<div class="background"></div>
-<section class="hero my-19">
+<section class="hero py-20 my-19">
   <div class="container">
     <div class="items-center gap-24 lg:grid-cols-2">
       <div class="flex flex-col items-center gap-8 md:items-start">
@@ -51,20 +50,10 @@ const { src = "/astronaut-hero-img.webp" } = Astro.props;
     font-size: 3rem;
   }
 
-  .background {
-    background: url("../assets/img/gradient1.webp") no-repeat center center;
-    background-size: cover;
-    height: 47.438rem;
-    //div is in the back of the hero
-    z-index: -1;
-    position: relative;
-    margin-bottom: -44em;
-    top: -6.5em;
-  }
-
   .hero {
     position: relative;
     overflow: hidden;
+    background: url("../assets/img/gradient1.webp") no-repeat center center;
   }
 
   :global(.darkmode .text-gradient) {
